@@ -6,6 +6,7 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" type="text/css" rel="stylesheet">
 
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -14,9 +15,6 @@
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="js/bootstrap.min.js"></script>
 
 <script>
 Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEoCj5YkGgCMVwgfV998eL4j3");
@@ -104,10 +102,28 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 							<li><div class="checkbox"><label><input type="checkbox">Dance/Zumba</label></div></li>
 						</ul>
 					</div>
-
+					
 					<br />
 					
-					<button type="submit" class="btn btn-default">Next</button>
+					<div class="form-group">
+						<label for="avgmile">Average Mile:</label>
+						<input type="time" class="form-control" id="avgmile" value="00:09 00">
+					</div>
+
+					<div class="form-group">
+						<label for="maxbench">Max Bench Press (lb):</label>
+						<input type="text" class="form-control" id="maxbench" value="100">
+					</div>
+					
+					<div class="form-group">
+						<label for="maxbench">Max Squat (lb):</label>
+						<input type="text" class="form-control" id="maxsquat" value="80">
+					</div>
+					
+					<br />
+					
+					<!--<button type="submit" class="btn btn-default">Next</button-->
+					<a href="dashboard.html" class="btn btn-info" role="button">Next</a>
 				</form>
 			</div>
 			<div class="col-lg-4"> </div>

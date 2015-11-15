@@ -5,19 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="css/custom.css" type="text/css" rel="stylesheet">
 
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Parse.js -->
+<script src="http://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
+<script src="js/scripts.js"></script>
 <script>
 Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEoCj5YkGgCMVwgfV998eL4j3");
 </script>
@@ -72,7 +74,7 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 		
 		<div class="row" id="registrationform">
 			<div class="col-lg-4 col-lg-offset-4">
-				<form role="form">
+				<form role="form" action="javascript:void(0);">
 					<div class="form-group">
 						<label for="email">Email address:</label>
 						<input type="email" class="form-control" id="email" value="foo@bar.com">
@@ -81,7 +83,12 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 						<label for="pwd">Password:</label>
 						<input type="password" class="form-control" id="pwd" value="password123">
 					</div>					
-					<button type="submit" class="btn btn-default">Submit</button>
+					<!--<button type="submit" class="btn btn-default" 
+					onclick="registerNewUser(document.getElementById('email').innerHTML, document.getElementById('pwd').innerHTML)">Submit</button>-->
+					
+
+					<a href="setup_profile.html" class="btn btn-info" role="button" 
+					onclick="registerNewUser(document.getElementById('email').value, document.getElementById('pwd').value)">Submit</a>
 				</form>
 			</div>
 			<div class="col-lg-4"> </div>
@@ -93,6 +100,7 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 <footer>
 <div class="row" id="footer">
 <p><i>todo...</i></p>
+
 </div>
 </footer>
 </div>

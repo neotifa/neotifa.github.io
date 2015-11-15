@@ -16,15 +16,11 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<!-- Parse.js -->
-<script src="http://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
-<script src="js/scripts.js"></script>
-
 <script>
 Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEoCj5YkGgCMVwgfV998eL4j3");
 </script>
 
-<title>Login</title>
+<title>Dashboard</title>
 </head>
 
 <body>
@@ -46,8 +42,14 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 			<div class="col-lg-11">
 				<h1>TrainWithMe</h1>
 			</div>
-			<div class="col-lg-1">				
-				<a href="login.html"><span class="glyphicon glyphicon-user"></span>login</a>
+			<div class="col-lg-1">
+				<div class="dropdown">
+					<button type="button" class="btn btn-link btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>User</button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">Account Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -58,32 +60,12 @@ Parse.initialize("Wmgt9TmgJIxFgupu4BDhUzKQCCElRIiSYutk5ypA", "ZWGkwwlIIkeNtyDsEo
 	<div class="col-lg-12">
 	<div class="jumbotron">
 		<div class="row" id="info">
-			<div class="col-lg-8 col-lg-offset-4">
-				<h1>Login</h1>
+			<div class="col-lg-7 col-lg-offset-5">
+				<h1>User</h1>
 			</div>
 		</div>
 		
-		<div class="row" id="loginform">
-			<div class="col-lg-4 col-lg-offset-4">
-				<form role="form" action="javascript:void(0);">
-					<div class="form-group">
-						<label for="email">Email address:</label>
-						<input type="email" class="form-control" id="email" value="foo@bar.com">
-					</div>
-					<div class="form-group">
-						<label for="pwd">Password:</label>
-						<input type="password" class="form-control" id="pwd" value="password123">
-					</div>	
-					<div class="checkbox">
-						<label><input type="checkbox"> Remember me</label>
-					</div>
-					<!--<button type="submit" class="btn btn-default">Submit</button>-->
-					<a href="dashboard.html" class="btn btn-info" role="button" 
-					onclick="login(document.getElementById('email').innerHTML, document.getElementById('pwd').innerHTML)">Login</a>
-				</form>
-			</div>
-			<div class="col-lg-4"> </div>
-		</div>
+		
 	</div>
 	</div>
 </div>

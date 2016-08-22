@@ -1,5 +1,5 @@
 body {
-	background-color: #9fc4a4;
+	background-color: #b5c6bc;
 	color: #2b3e2a;
 	letter-spacing: 2px;
 }
@@ -18,7 +18,7 @@ hr {
 }
 
 .active {
-	color: #e03f3c;
+	color: #d81e5b;
 }
 
 .well {
@@ -28,11 +28,11 @@ hr {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fcf8f7;
-    background-color: #e03f3c;
+    background-color: #d81e5b;
 }
 
 .nav-pills > li > a {
-	color: #e03f3c;
+	color: #d81e5b;
 }
 
 .nav-pills > li > a:hover {

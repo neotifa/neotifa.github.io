@@ -1,11 +1,11 @@
 body {
-	background-color: #b5c6bc;
-	color: #2b3e2a;
+	background-color: #0E4C4D;
+	color: #0E4C4D;
 	letter-spacing: 2px;
 }
 
-h1, h2, h3 {
-	color: #2b3e2a;
+h1, h2, h3, h4, h5, h6 {
+	color: #5D2933;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 }
 
 hr {
-	border-color: #2b3e2a;
+	border-color: #5D2933;
 }
 
 .active {
@@ -22,12 +22,12 @@ hr {
 }
 
 .well {
-	background-color: #fcf8f7;
+	background-color: #F8F4FF;
 	margin-top: 10px; right: 50px; bottom: 10px; left: 50x;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #fcf8f7;
+    color: #373F27;
     background-color: #d81e5b;
 }
 

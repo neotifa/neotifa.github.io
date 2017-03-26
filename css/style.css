@@ -1,11 +1,11 @@
 body {
-	background-color: #0E4C4D;
-	color: #0E4C4D;
+	background-color: #004040;
+	color: #004040;
 	letter-spacing: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #5D2933;
+	color: #4C083A;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 }
 
 hr {
-	border-color: #5D2933;
+	border-color: #4C083A;
 }
 
 .active {
@@ -22,7 +22,7 @@ hr {
 }
 
 .well {
-	background-color: #F8F4FF;
+	background-color: #E6E6E6;
 	margin-top: 10px; right: 50px; bottom: 10px; left: 50x;
 }
 
